@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+- node
+branches:
+  only:
+  - master
+before_install:
+- npm install -g hexo
+- npm install
+install:
+- hexo generate
+deploy:
+  provider: s3
+  access_key_id: AKIAJTIVYVMBYDENFBZQ
+  secret_access_key:
+    secure: dZaFKQPsZ2PQE4NM2KzeTkZOPLzfnaz2HLu/OLBIeDUAqgqGSOO4suiTHN9uSW4mYyKusDnPumrdyGCglJMM/e+PU4/RT+ElUiCzXSTzse7yTcY/nE2eoX8GBPLzKZZMi0jKVP3TuXAFH0miUFksh2H6TD7B2+mNl+P+hR+KRPLcOfuTDnhinZWjzMufvVvq4Sm02xvjgo/FMpjAH6kgHT5ftTYufN2KRoaz+QsEa3+zPZkbUekT4gtrxd3j3xVbJMHk3uWeWFPQv10P9RIiJZTAHNa2+Wwicef3ERJeWXc0BmwVksYs81rk1WD4bEYzpUUEa2NNyUU6l9w1Nur8g2EhgrVeNq3cXe13j0Y3th9hnEhfYq+ajcpXqDV4T9WS8L2TZYp8k0AO6uKEyyGG7Hm2LvDBx6YvdjnB7rsxXLerwibZtGKDIet3k/h9JHuAJUlLcuzm+uQq/XchDSNwK3z/9HyqxGuznEQp1o1YDbT9fSnGe/jgt1Lp4eJNJh3WPQagctDb8zp6zTPwTgDRcqBJrPo1J+2RkHRVQEYcRzWNIW2hdFXJNio7VYJ56s3YetVSyfO1LyeBcq0zABlOr4WDtNT+Qk7ToHGv97mjPeohO5l959C7FaJBIYX9CXgWPSlXgLYSKj4cmbakW55wbBdQkIfpnKwSIfMM+wond14=
+  bucket: "hexo.damir.tech"
+  skip_cleanup: true
+  local_dir: public
+  region: "eu-west-2"
