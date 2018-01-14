@@ -14,7 +14,7 @@ deploy:
   access_key_id: AKIAJTIVYVMBYDENFBZQ
   secret_access_key:
     secure: DsAUkRO/ghfyAe2uoTz5kVqI/xcc7LQdkHccZvDUilk9yCgLJ7FeyzJJ+m/AiJljTT/8gynpNLDsH3zTNMdjK4PxqS9eFeSUHmOhqSBZUb0OMoEOYcGgAtd+3OpdYGTB2vtLFljiQZdp7shDIbElYUflXwJiCDFHcMywpdU8oCrOZ4RTp/PJJzAleECxGRKEHu6OADmue6fiH0R+6ecozBGcr/rT1I+UJBJSfwUtfNNQVEdcM1MpaMgMH7EWLm5QaKB17kYM7b2PdpQgNGH9FC6OOHhiLBGfpiyOgjaW+ygE2M+kkGEoYNmj+Cpdz+7Lo/v+YC3hNHCg9iE33prPyivXBdMupszlLNdu2dCcTV+NHWaiSyt7sMQXj/m5N0XLARYwiVr/+5DAMsPvqkCCHKDPUa5y6eyHdUXoWFQi/yYoCG4l/spbI4g5vdUv4CF54pgA2GnoLQf5Pd1/ksNdSsEevSs+i+uW+wgsZyu+xbB7Bu77f+X7f1WJOdD7yiD5P+m6bU6batVnfMDpgTmqRUzCdWGEBMtr4EdUH1dzoIOxq1SBHa+Lm6mK2cxBc/7RBrMSDR7vqoXY/vBLCYzfDcXCj2hf1AqfvgviHn5LgloQln3HzAqMw9DhJznazzRfPBuVW8bZxrB4CLr2vP1TnvZPdTTCco1NcNvNANCHkcE=
-  bucket: hexo.damir.tech
+  bucket: damir.tech
   skip_cleanup: true
   local_dir: public
   region: eu-west-2
