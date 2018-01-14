@@ -12,6 +12,6 @@ It’s a bit empty at the moment, hopefully, I will find the time to update and 
 
 Stay tuned :)
 
-![](https://damir.tech/content/images/2017/05/its_something.png)
+![](/images/its_something.png)
 
 Photo credit: <a href="https://www.flickr.com/photos/siraf72/11272718795/">siraf72</a> via <a href="https://visualhunt.com/re/b4b2ff">VisualHunt.com</a> / <a href="http://creativecommons.org/licenses/by/2.0/"> CC BY</a>
