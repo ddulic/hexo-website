@@ -10,6 +10,7 @@ before_install:
 install:
 - hexo generate
 - cp -r email public
+- cp ddulic.pdf public
 deploy:
   provider: s3
   access_key_id: AKIAJTIVYVMBYDENFBZQ
