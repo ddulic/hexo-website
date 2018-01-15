@@ -4,6 +4,15 @@
 <meta name="theme-color" content="{{ theme.android_chrome_color }}">
 
 
+{% if theme.needmoreshare2.enable %}
+  {% set needmoreshare2_css = url_for(theme.vendors._internal + '/needsharebutton/needsharebutton.css') %}
+  {% if theme.vendors.needmoreshare2 %}
+    {% set needmoreshare2_css = theme.vendors.needmoreshare2_css %}
+  {% endif %}
+  <link rel="stylesheet" href="{{ needmoreshare2_css }}">
+{% endif %}
+
+
 {% if theme.pace %}
   {% set pace_css_uri = url_for(theme.vendors._internal + '/pace/'+ theme.pace_theme +'.min.css?v=1.0.2') %}
   {% set pace_js_uri = url_for(theme.vendors._internal + '/pace/pace.min.js?v=1.0.2') %}
@@ -134,12 +143,10 @@
     version: '{{ theme.version }}',
     sidebar: {{ theme.sidebar | json_encode }},
     fancybox: {{ theme.fancybox }},
+    fastclick: {{ theme.fastclick }},
+    lazyload: {{ theme.lazyload }},
     tabs: {{ theme.tabs.enable }},
     motion: {{ theme.motion | json_encode }},
-    duoshuo: {
-      userId: '{{ theme.duoshuo_info.user_id | default() }}',
-      author: '{{ theme.duoshuo_info.admin_nickname | default(__('author'))}}'
-    },
     algolia: {
       applicationID: '{{ theme.algolia.applicationID }}',
       apiKey: '{{ theme.algolia.apiKey }}',

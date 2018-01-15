@@ -100,4 +100,4 @@ Here is some social media stuff ⬇️
 
 ---
 
-If you want to contact me, my email is in the pdf version of my resume which can be viewed/downloaded <a class="no-smoothstate" href="https://damir.tech/public/ddulic.pdf">here</a>.
+If you want to contact me, my email is in the pdf version of my resume which can be viewed/downloaded <a class="no-smoothstate" href="/public/ddulic.pdf">here</a>.

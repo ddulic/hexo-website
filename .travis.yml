@@ -9,6 +9,7 @@ before_install:
 - npm install
 install:
 - hexo generate
+- cp -r email public
 deploy:
   provider: s3
   access_key_id: AKIAJTIVYVMBYDENFBZQ
