@@ -9,6 +9,7 @@ before_install:
 - npm install
 install:
 - hexo generate
+- git clone https://github.com/theme-next/theme-next-reading-progress public/lib/reading_progress
 - cp -r email public
 - cp ddulic.pdf public
 deploy:
