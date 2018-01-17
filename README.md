@@ -8,6 +8,6 @@
 
 To-Do:
 
-- [ ] Move to CloudFront
-- [ ] Add Letsencrypt
-- [ ] Route to main Website
+- [x] Move to CloudFront
+- [x] Add Letsencrypt
+- [x] Route to main Website
