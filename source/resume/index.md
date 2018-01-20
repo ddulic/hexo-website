@@ -42,10 +42,12 @@ date: 2018-01-04 23:23:14
 * Other
   : Nginx, Apache, Django, Bacula
 
+
 ### Experience
 
 Vast.com
-*DevOps Engineer* - __Aug 2017 - Present__
+: *DevOps Engineer* --
+  __Aug 2017 - Present__
 
 * BASH, and Python scripting for various tasks such as automated database backups, rsync operations, and application installations
 * Managed and maintained ongoing changes to configuration in Chef
@@ -56,9 +58,9 @@ Vast.com
 * Kickstarting of CentOS and Ubuntu servers
 * On-call duties including weekends, nights and holidays
 
-
 ICBTech
-*DevOps Engineer* - __Nov 2016 - Aug 2017__
+: *DevOps Engineer* --
+  __Nov 2016 - Aug 2017__
 
 * Primary Linux engineer, developed Python and Bash scripts to maintain systems
 * Server configuration management via Puppet
@@ -76,7 +78,7 @@ ICBTech
 : Website manager. Deployed Wordpress, Nextcloud, and Mattermost.
 
 [damir.tech](https://damir.tech)
-: Personal blog, wiki, grafana monitoring stack. Fully set up in docker compose. Planning move to AWS.
+: Personal blog, wiki, grafana monitoring stack. Fully set up in docker compose. Hosted on AWS S3 using Github and Travis-ci.
 
 ------
 
