@@ -93,7 +93,6 @@ Tech-College of Applied Sciences
 
 ------
 
-![](/images/damir-dulic.jpg)
 
 Here is some social media stuff ⬇️
 - [Linkedin](https://www.linkedin.com/in/ddulic/)
