@@ -103,6 +103,5 @@ Here is some social media stuff ⬇️
 ---
 
 If you want to contact me, my email is in the pdf version of my resume which can be downloaded below.
-Please ignore the somewhat broken links in the pdf, there seems to be an issue in the tool used to generate the pdf :/
 
 <a class="custom_btn" href="/ddulic.pdf">Download Resume</a>
