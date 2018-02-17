@@ -80,3 +80,5 @@ theme: next
 
 sitemap:
     path: sitemap.xml
+    tag: false
+    category: false
