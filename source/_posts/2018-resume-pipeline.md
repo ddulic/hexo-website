@@ -9,6 +9,8 @@ tags:
 ---
 n my previous post [2018 Website Continuous Deployment Pipeline](https://damir.tech/2018-website-pipeline) I forgot to include one crutial part of my website - my [Resume](https://damir.tech/resume/) Page.
 
+<!-- more -->
+
 # Intro
 
 I wanted a fresh resume. My previous where total and utter garbage in regards to formatting and readability, so it was time for a new one. I was also getting sick of editing my resume page and forgetting to update my PDF resume, and vise versa, I needed a way to edit once and update both my resume page on my website and my resume PDF.
