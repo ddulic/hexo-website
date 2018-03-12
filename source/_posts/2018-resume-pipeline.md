@@ -7,7 +7,7 @@ tags:
   - aws
   - travis
 ---
-n my previous post [2018 Website Continuous Deployment Pipeline](https://damir.tech/2018-website-pipeline) I forgot to include one crutial part of my website - my [Resume](https://damir.tech/resume/) Page.
+In my previous post [2018 Website Continuous Deployment Pipeline](https://damir.tech/2018-website-pipeline) I forgot to include one crutial part of my website - my [Resume](https://damir.tech/resume/) Page.
 
 <!-- more -->
 
