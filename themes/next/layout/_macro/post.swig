@@ -10,7 +10,7 @@
     {% set post_class = post_class + ' ' + 'post-sticky' %}
   {% endif %}
 
-  {% if theme.reading_progress.enable %}
+  {% if theme.reading_progress.enable && not is_index %}
     <div class="reading-progress-bar"></div>
   {% endif %}
 
@@ -78,16 +78,23 @@
             #}</time>
             {% endif %}
 
-            {% if theme.post_meta.created_at and theme.post_meta.updated_at %}
-              <span class="post-meta-divider">|</span>
+            {% set date_updated_diff = date(post.date, config.date_format) != date(post.updated, config.date_format) %}
+            {% if theme.post_meta.updated_at %}
+              {% if !theme.post_meta.updated_diff || theme.post_meta.updated_diff && date_updated_diff %}
+                {% set display_updated = true %}
+              {% endif %}
             {% endif %}
 
-            {% if theme.post_meta.updated_at %}
+            {% if display_updated or (!theme.post_meta.created_at and theme.post_meta.updated_at) %}
+              {% if theme.post_meta.created_at and theme.post_meta.updated_at %}
+              <span class="post-meta-divider">|</span>
+              {% endif %}
+
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               {% if theme.post_meta.item_text %}
-                <span class="post-meta-item-text">{{ __('post.modified') }}&#58;</span>
+                <span class="post-meta-item-text">{{ __('post.modified') + __('symbol.colon') }}</span>
               {% endif %}
               <time title="{{ __('post.modified') }}" itemprop="dateModified" datetime="{{ moment(post.updated).format() }}">{#
               #}{{ date(post.updated, config.date_format) }}{#
@@ -129,7 +136,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count fb-comments-count" data-href="{{ post.permalink }}" itemprop="commentCount">0</span> comments
+                  <span class="post-meta-item-text">{{ __('post.comments_count') + __('symbol.colon') }}</span> <span class="post-comments-count fb-comments-count" data-href="{{ post.permalink }}" itemprop="commentCount">0</span>
                 </a>
               </span>
             {% elseif theme.disqus.enable and theme.disqus.count %}
@@ -151,7 +158,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count hc-comment-count" data-xid="{{ post.path }}" itemprop="commentsCount"></span>
+                  <span class="post-meta-item-text">{{ __('post.comments_count') + __('symbol.colon') }}</span> <span class="post-comments-count hc-comment-count" data-xid="{{ post.path }}" itemprop="commentsCount"></span>
                 </a>
               </span>
               <!--/noindex-->
@@ -163,11 +170,11 @@
               </span>
               {% if is_post() %}
                 <a href="{{ url_for(post.path) }}#SOHUCS" itemprop="discussionUrl">
-                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="{{ post.path }}" itemprop="commentsCount"></span>
+                  <span class="post-meta-item-text">{{ __('post.comments_count') + __('symbol.colon') }}</span> <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="{{ post.path }}" itemprop="commentsCount"></span>
                 </a>
               {% else %}
                 <a href="{{ url_for(post.path) }}#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::{{ post.permalink }}" class="cy_cmt_count" data-xid="{{ post.path }}" itemprop="commentsCount" ></span>
+                  <span class="post-meta-item-text">{{ __('post.comments_count') + __('symbol.colon') }}</span> <span id="url::{{ post.permalink }}" class="cy_cmt_count" data-xid="{{ post.path }}" itemprop="commentsCount" ></span>
                 </a>
               {% endif %}
             {% elseif is_post() and theme.gitment.enable and theme.gitment.mint and theme.gitment.count %}
@@ -177,7 +184,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="{{ url_for(post.path) }}" itemprop="commentsCount"></span>
+                  <span class="post-meta-item-text">{{ __('post.comments_count') + __('symbol.colon') }}</span> <span class="post-comments-count gitment-comments-count" data-xid="{{ url_for(post.path) }}" itemprop="commentsCount"></span>
                 </a>
               </span>
             {% elseif theme.valine.enable and theme.valine.appid and theme.valine.appkey %}
@@ -187,7 +194,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="{{ url_for(post.path) }}" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">{{ __('post.comments_count') + __('symbol.colon') }}</span> <span class="post-comments-count valine-comment-count" data-xid="{{ url_for(post.path) }}" itemprop="commentCount"></span>
                 </a>
               </span>
             {% endif %}
@@ -201,21 +208,24 @@
                  <i class="fa fa-eye"></i>
                </span>
                {% if theme.post_meta.item_text %}
-                 <span class="post-meta-item-text">{{__('post.visitors')}}&#58;</span>
+                 <span class="post-meta-item-text">{{__('post.views') + __('symbol.colon') }}</span>
                {% endif %}
                  <span class="leancloud-visitors-count"></span>
              </span>
           {% endif %}
 
-          {% if not is_index and theme.busuanzi_count.enable and theme.busuanzi_count.page_pv %}
+          {% if not is_index and theme.busuanzi_count.enable and theme.busuanzi_count.post_views %}
             <span class="post-meta-divider">|</span>
-            <span class="page-pv">{{ theme.busuanzi_count.page_pv_header }}
-            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>{{ theme.busuanzi_count.page_pv_footer }}
+            <span class="post-meta-item-icon"
+            {% if not theme.post_meta.item_text %} title="{{ __('post.views') }}" {% endif %}>
+            <i class="fa fa-{{ theme.busuanzi_count.post_views_icon }}"></i>
+            {% if theme.post_meta.item_text %} {{__('post.views') + __('symbol.colon') }} {% endif %}
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
             </span>
           {% endif %}
 
           {% if config.symbols_count_time.symbols or config.symbols_count_time.time %}
-            <div class="post-wordcount">
+            <div class="post-symbolscount">
               {% if not theme.symbols_count_time.separated_meta %}
                 <span class="post-meta-divider">|</span>
               {% endif %}
@@ -225,9 +235,9 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 {% if theme.symbols_count_time.item_text_post %}
-                  <span class="post-meta-item-text">{{ __('post.wordcount') }}&#58;</span>
+                  <span class="post-meta-item-text">{{ __('post.symbols_count') + __('symbol.colon') }}</span>
                 {% endif %}
-                <span title="{{ __('post.wordcount') }}">{#
+                <span title="{{ __('post.symbols_count') }}">{#
                 #}{{ symbolsCount(post.content) }}{#
               #}</span>
               {% endif %}
@@ -241,9 +251,9 @@
                   <i class="fa fa-clock-o"></i>
                 </span>
                 {% if theme.symbols_count_time.item_text_post %}
-                  <span class="post-meta-item-text">{{ __('post.min2read') }} &asymp;</span>
+                  <span class="post-meta-item-text">{{ __('post.symbols_time') }}&asymp;</span>
                 {% endif %}
-                <span title="{{ __('post.min2read') }}">{#
+                <span title="{{ __('post.symbols_time') }}">{#
                 #}{{ symbolsTime(post.content, theme.symbols_count_time.awl, theme.symbols_count_time.wpm) }}{#
               #}</span>
               {% endif %}
@@ -251,9 +261,9 @@
           {% endif %}
 
           {% if post.description and (not theme.excerpt_description or not is_index) %}
-              <div class="post-description">
-                  {{ post.description }}
-              </div>
+              <div class="post-description">{#
+                #}{{ post.description }}{#
+            #}</div>
           {% endif %}
 
         </div>
@@ -325,6 +335,11 @@
         {{ post.content }}
       {% endif  %}
     </div>
+
+    {% if theme.related_posts.enable and (theme.related_posts.display_in_home or not is_index) %}
+      {% include 'post-related.swig' with { post: post } %}
+    {% endif %}
+
     {#####################}
     {### END POST BODY ###}
     {#####################}
