@@ -97,7 +97,7 @@ Tech-College of Applied Sciences
 Here is some social media stuff ⬇️
 - [Linkedin](https://www.linkedin.com/in/ddulic/)
 - [Github](https://github.com/ddulic)
-- [Twitter](https://twitter.com/ddulic92)
+- [Twitter](https://twitter.com/_ddulic)
 - and [Keybase](https://keybase.io/ddulic) to confirm it all 🔑
 
 ---
