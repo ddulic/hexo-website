@@ -157,8 +157,8 @@ site_state: true
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
   GitHub: https://github.com/ddulic || github
-  Twitter: https://twitter.com/ddulic92 || twitter
-  Linkedin: https://www.linkedin.com/in/ddulic/ || linkedin
+  Twitter: https://twitter.com/_ddulic || twitter
+  Linkedin: https://www.linkedin.com/in/ddulic || linkedin
   #E-Mail: mailto:yourname@gmail.com || envelope
   #Google: https://plus.google.com/yourname || google
   #FB Page: https://www.facebook.com/yourname || facebook
