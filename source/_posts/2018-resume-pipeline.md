@@ -1,5 +1,5 @@
 ---
-title: 2018 Resume Continuous Deployment Pipeline
+title: 2018 Resume Continuous Deployment Pipeline 📜
 date: 2018-03-11 15:54:12
 tags:
   - linux

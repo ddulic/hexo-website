@@ -1,5 +1,5 @@
 ---
-title: 2018 Website Continuous Deployment Pipeline
+title: 2018 Website Continuous Deployment Pipeline 🌐
 date: 2018-02-17 22:49:49
 tags:
   - linux
