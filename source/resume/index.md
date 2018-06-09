@@ -1,5 +1,5 @@
 ---
-title: Damir Dulić, DevOps Engineer
+title: Damir Dulić, System Engineer
 date: 2018-01-04 23:23:14
 comments: false
 ---
@@ -46,9 +46,15 @@ comments: false
 
 ### Experience
 
+Elsevier (ScienceDirect)
+: *System Engineer* --
+  __June 2018 - Present__
+
+* TBD :D
+
 Vast.com
 : *DevOps Engineer* --
-  __Aug 2017 - Present__
+  __Aug 2017 - May 2018__
 
 * BASH, and Python scripting for various tasks such as automated database backups, rsync operations, and application installations
 * Managed and maintained ongoing changes to configuration in Chef
