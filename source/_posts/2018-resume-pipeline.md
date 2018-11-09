@@ -45,11 +45,13 @@ Unlike the last part, the AWS setup requires the least work and explanation sinc
 
 ## Docker
 
-I was in the process conteineratzing various services at my job, so why not conteinerize markdown-resume while at it. After all, practice makes perfect :)
+~~I was in the process conteineratzing various services at my job, so why not conteinerize markdown-resume while at it. After all, practice makes perfect :)~~
 
-But it was easier said then done... markdown-resume is in PHP and I had some formating problems in the resulting PDF. It's been years since I touched PHP to be able to fix it my self, luckily someone helped me with my [issue](https://github.com/there4/markdown-resume/issues/65).
+~~But it was easier said then done... markdown-resume is in PHP and I had some formating problems in the resulting PDF. It's been years since I touched PHP to be able to fix it my self, luckily someone helped me with my [issue](https://github.com/there4/markdown-resume/issues/65).~~
 
-The final Dockerfiles can be found in my [fork](https://github.com/ddulic/markdown-resume) of the project which includes the fixes described above.
+~~The final Dockerfiles can be found in my [fork](https://github.com/ddulic/markdown-resume) of the project which includes the fixes described above.~~
+
+Update: [markdown-resume](https://github.com/there4/markdown-resume/blob/master/Dockerfile) now have their own Dockerfile, so I am using that now.
 
 # Final Thoughts
 

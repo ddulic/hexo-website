@@ -64,11 +64,13 @@ If we want to use a custom name we have to point our Domain Name to the AWS's S3
 
 In order to use TLS, we have to use CloudFront and attach a certificate to our CF id, for which a guide can be found [here](https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-cloudfront-walkthrough.html).
 
-Once we have set up our CloudFront and pointed it to S3 there is a tool which can setup `https` via [Let's Encrypt](https://letsencrypt.org) automagically for us - [certbot-s3front](https://github.com/dlapiduz/certbot-s3front); just follow their README :)
+~~Once we have set up our CloudFront and pointed it to S3 there is a tool which can setup `https` via [Let's Encrypt](https://letsencrypt.org) automagically for us - [certbot-s3front](https://github.com/dlapiduz/certbot-s3front); just follow their README :)~~
+
+Update: I ditched LE in favor of [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/pricing/) just so I don't have to think about constantly renewing. They offer free public certificates.
 
 So, in the end, it looks something like this:
 
-S3 files -> S3 endpoint -> CloudFront ID (With LE Cert) -> Route 53 Alias
+S3 files -> S3 endpoint -> CloudFront ID ~~(With LE Cert)~~ -> Route 53 Alias
 
 Note: Due to the way CloudFront works in caching our content your changes won't be visible immediately upon the files updating in S3 (it can take up to 24h). If you want to circumvent this you need to trigger an invalidation on CloudFront, more info [here](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html).
 
@@ -88,6 +90,6 @@ All in all, it was a nice learning experience for me, I got to research in depth
 I still have some ideas for possible improvements, like:
 
 - cache invalidation via lamba
-- let's encrypt certificate renew via lamba
+- ~~let's encrypt certificate renew via lamba~~
 
 Time to start playing with lambda :)
