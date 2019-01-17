@@ -18,7 +18,10 @@ Elsevier (ScienceDirect)
 : *System Engineer* --
   __June 2018 - Present__
 
-* TBD
+* Actively develop, manage, improve, and monitor cloud infrastructure on AWS
+* Participate in platform performance analysis, software optimisation and tuning
+* Maintain and develop tools and pipelines using Ansible, GoCD, Github, New Relic
+* Something, buzzword, something, agile software development principles
 
 Vast.com
 : *DevOps Engineer* --
@@ -26,7 +29,7 @@ Vast.com
 
 * Developed scripts for build, deployment, backup, maintenance and related tasks using Jenkins, Docker, Python and Bash
 * Implemented monitoring and reporting solutions across a range of environments and platforms
-* Managed and maintained ongoing changes to configuration in Chef
+* Managed and maintained ongoing changes to configurations in Chef
 * On-call duties including weekends, nights and holidays
 
 ICBTech
@@ -35,7 +38,7 @@ ICBTech
 
 * Implemented a CI/CD pipeline involving GitLab, Jenkins, Docker, and Selenium for complete automation from commit to deployment
 * Primary DevOps Engineer, developed Python and Bash scripts to maintain systems, local environment solutions using Docker and Vagrant
-* Compilied custom Raspberry Pi images with Buildroot
+* Compiled custom Raspberry Pi images with Buildroot
 
 #### Projects
 
