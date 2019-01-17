@@ -7,7 +7,7 @@ comments: false
 ---
 #### Profile
 
-* Detailed technical knowledge and hands-on experience in the design and implementation of fully automated CI and CD pipelines
+* Detailed technical knowledge and hands-on experience in the design and implementation of fully automated CI and CD systems
 * Passionate, responsible and committed engineer, with a get-it-done, on-time spirit
 * Highly adaptable in quickly changing technical environments with very strong organizational and analytical skills
 * Self-motivated and hard working with the ability to work under minimal supervision and guidance
@@ -43,10 +43,7 @@ ICBTech
 #### Projects
 
 [damir.tech](https://damir.tech)
-: Personal blog, wiki, grafana monitoring stack. Fully set up in docker compose. Blog and Resume hosted on AWS S3 using Github and Travis CI.
-
-[iplanung](https://iplanung.com)
-: Website manager. Deployed and maintaining Wordpress, Nextcloud, and Mattermost.
+: Personal blog, wiki, hosted on AWS S3 using Github and Travis CI.
 
 #### Education
 
