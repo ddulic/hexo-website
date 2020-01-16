@@ -15,30 +15,41 @@ comments: false
 #### Experience
 
 Elsevier (ScienceDirect)
-: *System Engineer* --
-  __June 2018 - Present__
+
+: *Systems Engineer III* --
+  __Mar 2019 - Present__
+
+* Leading New Relic adoption and migration
+* Develop Ansible playbooks and pipelines for supporting RDS workloads
+* Assist in developing a process for migrating to Amazon Linux 2 using Packer
+* Automate Cloudflare resources with Terraform
+* Extensive working knowledge on the configuration and deployment of Nginx
+
+: *Systems Engineer II* --
+  __Jun 2018 - Mar 2019__
 
 * Actively develop, manage, improve, and monitor cloud infrastructure on AWS
 * Participate in platform performance analysis, software optimisation and tuning
-* Maintain and develop tools and pipelines using Ansible, GoCD, Github, New Relic
+* Maintain and develop tools and pipelines using Ansible, Docker, GoCD, Github, New Relic
 * Something, buzzword, something, agile software development principles
 
 Vast.com
 : *DevOps Engineer* --
   __Aug 2017 - May 2018__
 
-* Developed scripts for build, deployment, backup, maintenance and related tasks using Jenkins, Docker, Python and Bash
-* Implemented monitoring and reporting solutions across a range of environments and platforms
-* Managed and maintained ongoing changes to configurations in Chef
-* On-call duties including weekends, nights and holidays
+* Develop scripts for build, deployment, backup, maintenance and related tasks using Jenkins, Docker, Python and Bash
+* Implement monitoring and reporting solutions across a range of environments and platforms
+* Create and maintain ongoing changes to configurations in Chef
+* On-call, including weekends, nights and holidays
 
 ICBTech
 : *DevOps Engineer* --
   __Nov 2016 - Aug 2017__
 
-* Implemented a CI/CD pipeline involving GitLab, Jenkins, Docker, and Selenium for complete automation from commit to deployment
-* Primary DevOps Engineer, developed Python and Bash scripts to maintain systems, local environment solutions using Docker and Vagrant
-* Compiled custom Raspberry Pi images with Buildroot
+* Primary DevOps Engineer
+* Develop Python and Bash scripts to maintain systems, local environment solutions using Docker and Vagrant
+* Implement a CI/CD pipeline involving GitLab, Jenkins, Docker, and Selenium
+* Compile custom Raspberry Pi images with Buildroot
 
 #### Projects
 
