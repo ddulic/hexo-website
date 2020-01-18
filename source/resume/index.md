@@ -12,20 +12,21 @@ comments: false
 * Highly adaptable in quickly changing technical environments with very strong organizational and analytical skills
 * Self-motivated and hard working with the ability to work under minimal supervision and guidance
 
+------
+
 #### Experience
 
 Elsevier (ScienceDirect)
-
 : *Systems Engineer III* --
   __Mar 2019 - Present__
 
-* Leading New Relic adoption and migration
+* Leading New Relic adoption and migration for ScienceDirect
 * Develop Ansible playbooks and pipelines for supporting RDS workloads
 * Assist in developing a process for migrating to Amazon Linux 2 using Packer
 * Automate Cloudflare resources with Terraform
 * Extensive working knowledge on the configuration and deployment of Nginx
 
-: *Systems Engineer II* --
+*Systems Engineer II* --
   __Jun 2018 - Mar 2019__
 
 * Actively develop, manage, improve, and monitor cloud infrastructure on AWS
@@ -55,6 +56,8 @@ ICBTech
 
 [damir.tech](https://damir.tech)
 : Personal blog, wiki, hosted on AWS S3 using Github and Travis CI.
+
+------
 
 #### Education
 
