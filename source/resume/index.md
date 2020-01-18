@@ -10,6 +10,7 @@ comments: false
 * Detailed technical knowledge and hands-on experience in the design and implementation of fully automated CI and CD systems
 * Passionate, responsible and committed engineer, with a get-it-done, on-time spirit
 * Highly adaptable in quickly changing technical environments with very strong organizational and analytical skills
+* Believer in Behaviour Driven Development and Agile software development principles
 * Self-motivated and hard working with the ability to work under minimal supervision and guidance
 
 ------
@@ -20,8 +21,7 @@ Elsevier (ScienceDirect)
 : *Systems Engineer III* --
   __Mar 2019 - Present__
 
-* Leading New Relic adoption and migration for ScienceDirect
-* Develop Ansible playbooks and pipelines for supporting RDS workloads
+* Lead the New Relic adoption and migration for ScienceDirect
 * Assist in developing a process for migrating to Amazon Linux 2 using Packer
 * Automate Cloudflare resources with Terraform
 * Extensive working knowledge on the configuration and deployment of Nginx
@@ -30,9 +30,9 @@ Elsevier (ScienceDirect)
   __Jun 2018 - Mar 2019__
 
 * Actively develop, manage, improve, and monitor cloud infrastructure on AWS
+* Develop Ansible playbooks and pipelines for supporting RDS workloads
 * Participate in platform performance analysis, software optimisation and tuning
 * Maintain and develop tools and pipelines using Ansible, Docker, GoCD, Github, New Relic
-* Something, buzzword, something, agile software development principles
 
 Vast.com
 : *DevOps Engineer* --
