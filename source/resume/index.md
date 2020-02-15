@@ -1,5 +1,5 @@
 ---
-title: Damir Dulic, Systems Engineer
+title: Damir Dulic, DevOps Engineer
 date: 2018-01-04 23:23:14
 comments: false
 ---
@@ -55,7 +55,13 @@ ICBTech
 #### Projects
 
 [damir.tech](https://damir.tech)
-: Personal blog, wiki, hosted on AWS S3 using Github and Travis CI.
+: Personal blog, wiki, hosted on AWS S3 using Github and Travis CI
+
+------
+
+#### Certificates {#certificates}
+
+: *[AWS Certified Solutions Architect - Associate](https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2019-09-09&ci=AWS00595823)*
 
 ------
 
