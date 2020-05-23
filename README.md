@@ -1,6 +1,6 @@
 # Hexo Website
 
-[![Build Status](https://travis-ci.org/ddulic/hexo-website.svg?branch=master)](https://travis-ci.org/ddulic/hexo-website)
+**Replaced by [ddulic/damir.tech](https://github.com/ddulic/damir.tech)**
 
 - Built with [Hexo](https://github.com/hexojs/hexo)
 - Hosted on [AWS S3](http://hexo.damir.tech.s3-website.eu-west-2.amazonaws.com) with CloudFront
